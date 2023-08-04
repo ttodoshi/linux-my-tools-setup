@@ -12,6 +12,10 @@ sudo dnf install https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-
 sudo dnf update
 sudo dnf install discord
 
+# discord with fullscreen streams on gnome
+sudo dnf install jq
+webcord_type=x86_64.rpm && wget -O '/home/todoshi/Downloads/webcord.rpm' $(curl -s https://api.github.com/repos/SpacingBat3/WebCord/releases/latest | jq -r ".assets[] | select(.name | test(\"${webcord_type}\")) | .browser_download_url") && sudo rpm -i ~/Downloads/webcord.rpm && rm ~/Downloads/webcord.rpm
+
 sudo dnf install chromium
 sudo dnf install sqlitebrowser
 sudo dnf install steam

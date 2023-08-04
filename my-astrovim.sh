@@ -14,6 +14,7 @@ nvim +"TSInstall css"
 nvim +"TSInstall javascript"
 nvim +"TSInstall json"
 nvim +"TSInstall lua"
+nvim +"DapInstall python"
 git clone https://github.com/ttodoshi/astronvim-config.git ~/.config/nvim/lua/user
 pip3 install autopep8 flake8
 nvim  --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'

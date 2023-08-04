@@ -20,6 +20,10 @@ sudo dnf install sqlitebrowser
 sudo dnf install steam
 sudo dnf install thunderbird
 
+sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+sudo flatpak install flathub com.jetbrains.IntelliJ-IDEA-Community
+sudo flatpak install fedora org.gimp.GIMP
+
 # ASTRONVIM
 # u can download ur own fonts
 mkdir -p ~/.local/share/fonts && cd ~/.local/share/fonts && wget https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete.ttf && cd

@@ -28,7 +28,6 @@ sudo snap install telegram-desktop, code, chromium, gimp
 
 # astronvim setup
 sudo apt install python3-pip
-sudo apt install python3-autopep8
 mkdir -p ~/.local/share/fonts && cd ~/.local/share/fonts && wget https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/Hack/Regular/complete/Hack%20Regular%20Nerd%20Font%20Complete.ttf && cd
 nvim_type=linux64.deb$ && wget -O ~/Downloads/nvim.deb $(curl -s https://api.github.com/repos/neovim/neovim/releases/latest | jq -r ".assets[] | select(.name | test(\"${nvim_type}\")) | .browser_download_url") && sudo dpkg -i ~/Downloads/nvim.deb && rm ~/Downloads/nvim.deb && mkdir -p ~/.config/nvim && git clone https://github.com/AstroNvim/AstroNvim ~/.config/nvim && nvim +PackerSync
 

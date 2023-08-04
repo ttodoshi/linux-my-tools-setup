@@ -1,12 +1,7 @@
 #!/bin/bash
+touch ~/.bash_aliases
+echo 'alias path="realpath -s"' >> ~/.bash_aliases && echo 'alias x="xclip -selection clipboard"' >> ~/.bash_aliases && echo 'alias n="nvim"' >> ~/.bash_aliases && echo 'alias av="source ./venv/bin/activate"' >> ~/.bash_aliases
 # `path <filename>` returns fullpath to file 
-echo 'alias path="realpath -s"' >> ~/.bash_aliases
-
 # typing `| x` after command save command output to clipboard
-echo 'alias x="xclip -selection clipboard"' >> ~/.bash_aliases
-
 # n=nvim
-echo 'alias n="nvim"' >> ~/.bash_aliases
-
 # av - activate venv in current dir
-echo 'alias av="source ./venv/bin/activate"' >> ~/.bash_aliases 

@@ -7,7 +7,7 @@ sudo apt install neofetch
 sudo apt install xclip
 
 # telegram
-cd ~/Dowloads && wget https://telegram.org/dl/desktop/linux && tar -xvf tsetup.*.tar.xz && sudo mv Telegram/ /opt && cd /opt/Telegram/ && ./Telegram && cd
+cd ~/Downloads && wget https://telegram.org/dl/desktop/linux && tar -xvf tsetup.*.tar.xz && sudo mv Telegram/ /opt && cd /opt/Telegram/ && ./Telegram && cd
 
 # discord
 sudo dnf upgrade --refresh -y

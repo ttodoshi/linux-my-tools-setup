@@ -1,14 +1,10 @@
 #!/bin/bash
 sudo apt update && sudo apt upgrade
 
-# great clipboard
-sudo apt install copyq
-
 # copy output from terminal (command in ubuntu aliases)
 sudo apt install xclip
 
 sudo apt install neofetch
-sudo apt install sqlitebrowser
 
 # create creating a bootable USB flash drive
 sudo apt install gnome-multi-writer
@@ -18,10 +14,6 @@ sudo apt install gnome-shell-extension-manager
 
 # information about processes
 sudo apt install htop
-
-# discord with fullscreen streams on gnome
-sudo apt install jq
-webcord_type=_amd64.deb && wget -O '/home/todoshi/Downloads/webcord.deb' $(curl -s https://api.github.com/repos/SpacingBat3/WebCord/releases/latest | jq -r ".assets[] | select(.name | test(\"${webcord_type}\")) | .browser_download_url") && sudo dpkg -i ~/Downloads/webcord.deb && rm ~/Downloads/webcord.deb
 
 sudo add-apt-repository multiverse && sudo apt install steam
 sudo snap install telegram-desktop, code, chromium, gimp

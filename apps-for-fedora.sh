@@ -6,12 +6,7 @@ sudo dnf install neofetch
 # copy output from terminal (command in fedora aliases)
 sudo dnf install xclip
 
-# discord with fullscreen streams on gnome
-# sudo dnf install jq
-# webcord_type=x86_64.rpm && wget -O '/home/todoshi/Downloads/webcord.rpm' $(curl -s https://api.github.com/repos/SpacingBat3/WebCord/releases/latest | jq -r ".assets[] | select(.name | test(\"${webcord_type}\")) | .browser_download_url") && sudo rpm -i ~/Downloads/webcord.rpm && rm ~/Downloads/webcord.rpm
-
 sudo dnf install chromium
-# sudo dnf install sqlitebrowser
 sudo dnf install steam
 sudo dnf install thunderbird
 

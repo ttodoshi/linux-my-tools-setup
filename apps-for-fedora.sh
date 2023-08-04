@@ -17,10 +17,15 @@ sudo dnf install sqlitebrowser
 sudo dnf install steam
 sudo dnf install thunderbird
 
+# flatpaks
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+# tg desktop
 sudo flatpak install org.telegram.desktop
+# IntelliJ-IDEA-Community
 sudo flatpak install flathub com.jetbrains.IntelliJ-IDEA-Community
+# gimp (image editor)
 sudo flatpak install fedora org.gimp.GIMP
+# super cool markdown editor
 sudo flatpak install com.github.marktext.marktext
 
 # ASTRONVIM

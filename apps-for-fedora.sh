@@ -17,6 +17,8 @@ sudo dnf install discord
 
 sudo dnf install chromium
 sudo dnf install sqlitebrowser
+sudo dnf install steam
+sudo dnf install thunderbird
 
 # ASTRONVIM
 # u can download ur own fonts

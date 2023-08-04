@@ -1,5 +1,4 @@
 #!/bin/bash
-sudo dnf install python3-pip
 nvim +"LspInstall pyright"
 nvim +"LspInstall cssls"
 nvim +"LspInstall eslint"

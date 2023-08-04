@@ -6,6 +6,7 @@ sudo apt install neofetch
 sudo apt install psensor
 sudo apt install gnome-multi-writer
 sudo apt intall gnome-shell-extension-manager
+sudo apt install jq
 # main programms
 webcord_type=_amd64.deb && wget -O '/home/todoshi/Downloads/webcord.deb' $(curl -s https://api.github.com/repos/SpacingBat3/WebCord/releases/latest | jq -r ".assets[] | select(.name | test(\"${webcord_type}\")) | .browser_download_url") && sudo dpkg -i ~/Downloads/webcord.deb && rm ~/Downloads/webcord.deb
 # sudo apt install snapd

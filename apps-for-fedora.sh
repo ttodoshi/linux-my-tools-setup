@@ -6,9 +6,6 @@ sudo apt install neofetch
 # copy output from terminal (command in fedora aliases)
 sudo apt install xclip
 
-# telegram
-cd ~/Downloads && wget https://telegram.org/dl/desktop/linux && tar -xvf tsetup.*.tar.xz && sudo mv Telegram/ /opt && cd /opt/Telegram/ && ./Telegram && cd
-
 # discord
 sudo dnf upgrade --refresh -y
 sudo dnf install https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
@@ -21,6 +18,7 @@ sudo dnf install steam
 sudo dnf install thunderbird
 
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+sudo flatpak install org.telegram.desktop
 sudo flatpak install flathub com.jetbrains.IntelliJ-IDEA-Community
 sudo flatpak install fedora org.gimp.GIMP
 sudo flatpak install com.github.marktext.marktext

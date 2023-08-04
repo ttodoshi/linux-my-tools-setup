@@ -8,3 +8,5 @@ echo 'alias x="xclip -selection clipboard"' >> ~/.bash_aliases
 # n=nvim
 echo 'alias n="nvim"' >> ~/.bash_aliases
 
+# av - activate venv in current dir
+echo 'alias av="source ./venv/bin/activate"' >> ~/.bash_aliases 

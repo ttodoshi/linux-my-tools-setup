@@ -22,6 +22,7 @@ sudo dnf install discord
 
 sudo dnf install java
 sudo dnf install chromium
+sudo dnf install sqlitebrowser
 
 # ASTRONVIM
 # u can download ur own fonts

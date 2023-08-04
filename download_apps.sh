@@ -15,5 +15,5 @@ sudo snap install code
 sudo snap install chromium
 sudo add-apt-repository multiverse && sudo apt install steam
 sudo snap install gimp
-# nvim
-nvim_type=linux64.deb$ && wget -O '/home/todoshi/Downloads/nvim.deb' $(curl -s https://api.github.com/repos/neovim/neovim/releases/latest | jq -r ".assets[] | select(.name | test(\"${nvim_type}\")) | .browser_download_url") && sudo dpkg -i ~/Downloads/nvim.deb && rm ~/Downloads/nvim.deb
+# nvim (AstroNvim)
+nvim_type=linux64.deb$ && wget -O '/home/todoshi/Downloads/nvim.deb' $(curl -s https://api.github.com/repos/neovim/neovim/releases/latest | jq -r ".assets[] | select(.name | test(\"${nvim_type}\")) | .browser_download_url") && sudo dpkg -i ~/Downloads/nvim.deb && rm ~/Downloads/nvim.deb && mv ~/.config/nvim ~/.config/nvimbackup && git clone https://github.com/AstroNvim/AstroNvim ~/.config/nvim && nvim +PackerSync

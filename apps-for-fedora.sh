@@ -1,11 +1,6 @@
 #!/bin/bash
 sudo dnf update
 
-# drivers for video watch
-sudo dnf install gstreamer1-plugins-{bad-\*,good-\*,base} gstreamer1-plugin-openh264 gstreamer1-libav --exclude=gstreamer1-plugins-bad-free-devel
-sudo dnf install lame\* --exclude=lame-devel
-sudo dnf group upgrade --with-optional Multimedia
-
 sudo apt install neofetch
 
 # copy output from terminal (command in fedora aliases)
@@ -20,7 +15,6 @@ sudo dnf install https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-
 sudo dnf update
 sudo dnf install discord
 
-sudo dnf install java
 sudo dnf install chromium
 sudo dnf install sqlitebrowser
 

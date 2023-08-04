@@ -1,19 +1,6 @@
 #!/bin/bash
-nvim +"LspInstall pyright"
-nvim +"LspInstall cssls"
-nvim +"LspInstall eslint"
-nvim +"LspInstall jsonls"
-nvim +"LspInstall vimls"
-nvim +"LspInstall yamlls"
-nvim +"LspInstall bashls"
-nvim +"LspInstall lua"
-nvim +"TSInstall java"
-nvim +"TSInstall python"
-nvim +"TSInstall html"
-nvim +"TSInstall css"
-nvim +"TSInstall javascript"
-nvim +"TSInstall json"
-nvim +"TSInstall lua"
+nvim +"LspInstall pyright cssls eslint jsonls vimls yamlls bashls lua"
+nvim +"TSInstall java python html css javascript json lua"
 nvim +"DapInstall python"
 git clone https://github.com/ttodoshi/astronvim-config.git ~/.config/nvim/lua/user
 pip3 install autopep8 flake8

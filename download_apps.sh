@@ -1,7 +1,7 @@
 #!/bin/bash
 sudo apt update && sudo apt upgrade
 # tools
-sudo apt install copyq, psensor, neofetch, gnome-multi-writer, gnome-shell-extension-manager, jq, python3-autopep8
+sudo apt install copyq, psensor, neofetch, gnome-multi-writer, gnome-shell-extension-manager, jq, python3-autopep8, htop
 # main programms
 webcord_type=_amd64.deb && wget -O '/home/todoshi/Downloads/webcord.deb' $(curl -s https://api.github.com/repos/SpacingBat3/WebCord/releases/latest | jq -r ".assets[] | select(.name | test(\"${webcord_type}\")) | .browser_download_url") && sudo dpkg -i ~/Downloads/webcord.deb && rm ~/Downloads/webcord.deb
 sudo add-apt-repository multiverse && sudo apt install steam

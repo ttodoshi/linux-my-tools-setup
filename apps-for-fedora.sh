@@ -23,6 +23,7 @@ sudo dnf install thunderbird
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 sudo flatpak install flathub com.jetbrains.IntelliJ-IDEA-Community
 sudo flatpak install fedora org.gimp.GIMP
+sudo flatpak install com.github.marktext.marktext
 
 # ASTRONVIM
 # u can download ur own fonts

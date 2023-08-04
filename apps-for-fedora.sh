@@ -6,18 +6,12 @@ sudo dnf install neofetch
 # copy output from terminal (command in fedora aliases)
 sudo dnf install xclip
 
-# discord
-sudo dnf upgrade --refresh -y
-sudo dnf install https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
-sudo dnf update
-sudo dnf install discord
-
 # discord with fullscreen streams on gnome
-sudo dnf install jq
-webcord_type=x86_64.rpm && wget -O '/home/todoshi/Downloads/webcord.rpm' $(curl -s https://api.github.com/repos/SpacingBat3/WebCord/releases/latest | jq -r ".assets[] | select(.name | test(\"${webcord_type}\")) | .browser_download_url") && sudo rpm -i ~/Downloads/webcord.rpm && rm ~/Downloads/webcord.rpm
+# sudo dnf install jq
+# webcord_type=x86_64.rpm && wget -O '/home/todoshi/Downloads/webcord.rpm' $(curl -s https://api.github.com/repos/SpacingBat3/WebCord/releases/latest | jq -r ".assets[] | select(.name | test(\"${webcord_type}\")) | .browser_download_url") && sudo rpm -i ~/Downloads/webcord.rpm && rm ~/Downloads/webcord.rpm
 
 sudo dnf install chromium
-sudo dnf install sqlitebrowser
+# sudo dnf install sqlitebrowser
 sudo dnf install steam
 sudo dnf install thunderbird
 
@@ -31,6 +25,13 @@ sudo flatpak install flathub com.jetbrains.IntelliJ-IDEA-Community
 sudo flatpak install fedora org.gimp.GIMP
 # super cool markdown editor
 sudo flatpak install com.github.marktext.marktext
+
+sudo flatpak install com.discordapp.Discord
+# note taking app
+sudo flatpak install md.obsidian.Obsidian
+
+# file syncing
+sudo dnf install syncthing
 
 # ASTRONVIM
 # u can download ur own fonts

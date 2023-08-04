@@ -1,10 +1,10 @@
 #!/bin/bash
 sudo dnf update
 
-sudo apt install neofetch
+sudo dnf install neofetch
 
 # copy output from terminal (command in fedora aliases)
-sudo apt install xclip
+sudo dnf install xclip
 
 # discord
 sudo dnf upgrade --refresh -y

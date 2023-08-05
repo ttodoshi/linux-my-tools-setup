@@ -10,7 +10,10 @@ sudo dnf install chromium
 sudo dnf install steam
 sudo dnf install thunderbird
 
-# flatpaks
+# file syncing
+sudo dnf install syncthing
+
+# FLATPAKS
 sudo flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 # tg desktop
 sudo flatpak install org.telegram.desktop
@@ -25,8 +28,21 @@ sudo flatpak install com.discordapp.Discord
 # note taking app
 sudo flatpak install md.obsidian.Obsidian
 
-# file syncing
-sudo dnf install syncthing
+# docker
+sudo dnf remove docker \
+                  docker-client \
+                  docker-client-latest \
+                  docker-common \
+                  docker-latest \
+                  docker-latest-logrotate \
+                  docker-logrotate \
+                  docker-selinux \
+                  docker-engine-selinux \
+                  docker-engine
+sudo dnf -y install dnf-plugins-core
+sudo dnf config-manager --add-repo https://download.docker.com/linux/fedora/docker-ce.repo
+sudo dnf install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+sudo systemctl start docker
 
 # ASTRONVIM
 # u can download ur own fonts
@@ -35,6 +51,12 @@ sudo dnf install nodejs
 sudo dnf install g++
 sudo dnf install python3-pip
 sudo dnf install python3-devel
-nvim_type=nvim.appimage$ && wget -O ~/Downloads/nvim.appimage $(curl -s https://api.github.com/repos/neovim/neovim/releases/latest | jq -r ".assets[] | select(.name | test(\"${nvim_type}\")) | .browser_download_url") && cd ~/Downloads/ && chmod u+x nvim.appimage && sudo mv nvim.appimage /usr/local/bin/nvim && mkdir -p ~/.config/nvim && git clone https://github.com/AstroNvim/AstroNvim ~/.config/nvim && nvim +PackerSync
-# if nvim dont run from terminal after that u can try
-# cd ~/Downloads/ && ./nvim.appimage --appimage-extract && ./squashfs-root/usr/bin/nvim && sudo mv nvim.appimage /usr/local/bin/nvim && cd
+sudo dnf install neovim
+
+nvim +"LspInstall pyright cssls eslint jsonls vimls yamlls bashls lua"
+nvim +"TSInstall java python html css javascript json lua"
+nvim +"DapInstall python"
+git clone https://github.com/ttodoshi/astronvim.git ~/.config/nvim/lua/user
+pip3 install autopep8 flake8
+nvim  --headless -c 'autocmd User PackerComplete quitall'
+

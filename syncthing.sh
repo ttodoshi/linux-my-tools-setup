@@ -1,3 +1,2 @@
-#!/bin/bash
-syncthing --no-browser
-
+sudo systemctl enable syncthing@$USER.service
+sudo systemctl start syncthing@$USER.service
